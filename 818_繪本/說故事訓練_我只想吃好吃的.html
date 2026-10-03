@@ -422,7 +422,7 @@ function stopSpeak(){try{speechSynthesis.cancel();}catch(e){}}
 document.querySelectorAll('.listen').forEach(b=>b.onclick=()=>{
   stopSpeak();
   const card=cards[+b.dataset.i];
-  const text=[...card.querySelectorAll('.script')].map(p=>p.innerText).join(' ');
+  const text=[...card.querySelectorAll('.script')].map(p=>{const c=p.cloneNode(true);c.querySelectorAll('.zp').forEach(z=>z.remove());return c.textContent.replace(/\s+/g,'');}).join(' ');
   const u=new SpeechSynthesisUtterance(text);u.lang='zh-TW';u.rate=.85;u.pitch=1.1;
   speechSynthesis.speak(u);
 });
