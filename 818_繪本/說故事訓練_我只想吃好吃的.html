@@ -64,23 +64,24 @@ body.stage .coach-panel,body.stage .action-panel,body.stage .check,body.stage .h
 .congrats{display:none;text-align:center;background:#fff;border:4px dashed var(--orange);border-radius:18px;padding:18px;margin-top:14px;font-size:26px}
 .congrats.show{display:block}
 @media(max-width:860px){.card-body{grid-template-columns:1fr}.script{font-size:34px}}
-@page{size:A4 portrait;margin:11mm}
+@page{size:A4 landscape;margin:10mm}
 #paper{display:none}
 @media print{
   body{background:#fff}
   .topbar,.nav,.wrap,.overlay{display:none!important}
   #paper{display:block!important}
-  .psheet-title{text-align:center;font-size:26px;margin:0 0 2mm}
-  .psheet-sub{text-align:center;font-size:17px;margin:0 0 4mm}
-  .psec{break-inside:avoid;page-break-inside:avoid;border:2px solid #888;border-radius:8px;padding:6px 8px;margin:0 0 4mm}
-  .phead{font-size:19px;font-weight:700;margin-bottom:2mm}
-  .pgrid{display:grid;grid-template-columns:30mm 1fr;gap:6px;align-items:start}
-  .pgrid img{width:100%;border-radius:6px;border:1px solid #aaa}
-  .pspeaker{display:inline-block;background:#eee;border:1px solid #999;border-radius:6px;font-size:14px;padding:0 8px;margin:2mm 0 1mm}
-  .pscript{font-size:21px;line-height:1.9;margin:0 0 1mm}
-  .pact{font-size:15.5px;line-height:1.8;background:#f4f4f4;border-radius:6px;padding:3px 8px;margin:1mm 0}
-  .pchk{font-size:16px;margin-top:1mm}
-  .pfoot{font-size:15px;text-align:center;margin-top:3mm}
+  .psheet-title{text-align:center;font-size:30px;margin:0 0 2mm}
+  .psheet-sub{text-align:center;font-size:19px;margin:0 0 5mm}
+  .psec{break-before:page;page-break-before:always;break-inside:avoid;page-break-inside:avoid;border:3px solid #888;border-radius:10px;padding:8px 12px;margin:0}
+  .psec.first{break-before:avoid;page-break-before:avoid}
+  .phead{font-size:23px;font-weight:700;margin-bottom:3mm}
+  .pgrid{display:grid;grid-template-columns:70mm 1fr;gap:8px;align-items:start}
+  .pgrid img{width:100%;border-radius:8px;border:2px solid #aaa}
+  .pspeaker{display:inline-block;background:#eee;border:1px solid #999;border-radius:6px;font-size:15px;padding:1px 10px;margin:2mm 0 1mm}
+  .pscript{font-size:22px;line-height:1.85;margin:0 0 2mm}
+  .pact{font-size:17px;line-height:1.75;background:#f4f4f4;border-radius:8px;padding:4px 10px;margin:2mm 0}
+  .pchk{font-size:17px;margin-top:1mm}
+  .pfoot{font-size:18px;text-align:center;margin-top:4mm}
 }
 </style>
 </head>
@@ -98,7 +99,7 @@ body.stage .coach-panel,body.stage .action-panel,body.stage .check,body.stage .h
 <div id="paper">
 <div class="psheet-title">《<span class="t"><span class="c">我</span><span class="zp">ㄨㄛˇ</span></span><span class="t"><span class="c">只</span><span class="zp">ㄓˇ</span></span><span class="t"><span class="c">想</span><span class="zp">ㄒㄧㄤˇ</span></span><span class="t"><span class="c">吃</span><span class="zp">ㄔ</span></span><span class="t"><span class="c">好</span><span class="zp">ㄏㄠˇ</span></span><span class="t"><span class="c">吃</span><span class="zp">ㄔ</span></span><span class="t"><span class="c">的</span><span class="zp">ㄉㄜ˙</span></span>！》<span class="t"><span class="c">回</span><span class="zp">ㄏㄨㄟˊ</span></span><span class="t"><span class="c">家</span><span class="zp">ㄐㄧㄚ</span></span><span class="t"><span class="c">練</span><span class="zp">ㄌㄧㄢˋ</span></span><span class="t"><span class="c">習</span><span class="zp">ㄒㄧˊ</span></span><span class="t"><span class="c">紙</span><span class="zp">ㄓˇ</span></span><span class="t"><span class="c">稿</span><span class="zp">ㄍㄠˇ</span></span></div><div class="psheet-sub"><span class="t"><span class="c">姓</span><span class="zp">ㄒㄧㄥˋ</span></span><span class="t"><span class="c">名</span><span class="zp">ㄇㄧㄥˊ</span></span>：＿＿＿＿　　<span class="t"><span class="c">練</span><span class="zp">ㄌㄧㄢˋ</span></span><span class="t"><span class="c">習</span><span class="zp">ㄒㄧˊ</span></span><span class="t"><span class="c">日</span><span class="zp">ㄖˋ</span></span><span class="t"><span class="c">期</span><span class="zp">ㄑㄧ</span></span>：＿＿月＿＿日　　<span class="t"><span class="c">記</span><span class="zp">ㄐㄧˋ</span></span><span class="t"><span class="c">得</span><span class="zp">ㄉㄜˊ</span></span>：<span class="t"><span class="c">慢</span><span class="zp">ㄇㄢˋ</span></span><span class="t"><span class="c">一</span><span class="zp">ㄧ</span></span><span class="t"><span class="c">點</span><span class="zp">ㄉㄧㄢˇ</span></span>、<span class="t"><span class="c">大</span><span class="zp">ㄉㄚˋ</span></span><span class="t"><span class="c">聲</span><span class="zp">ㄕㄥ</span></span><span class="t"><span class="c">一</span><span class="zp">ㄧ</span></span><span class="t"><span class="c">點</span><span class="zp">ㄉㄧㄢˇ</span></span>、<span class="t"><span class="c">笑</span><span class="zp">ㄒㄧㄠˋ</span></span><span class="t"><span class="c">容</span><span class="zp">ㄖㄨㄥˊ</span></span><span class="t"><span class="c">多</span><span class="zp">ㄉㄨㄛ</span></span><span class="t"><span class="c">一</span><span class="zp">ㄧ</span></span><span class="t"><span class="c">點</span><span class="zp">ㄉㄧㄢˇ</span></span>！</div>
 
-<div class="psec">
+<div class="psec first">
   <div class="phead"><span class="t"><span class="c">第</span><span class="zp">ㄉㄧˋ</span></span> 1 <span class="t"><span class="c">關</span><span class="zp">ㄍㄨㄢ</span></span>・<span class="t"><span class="c">開</span><span class="zp">ㄎㄞ</span></span><span class="t"><span class="c">場</span><span class="zp">ㄔㄤˇ</span></span>｜<span class="t"><span class="c">有</span><span class="zp">ㄧㄡˇ</span></span><span class="t"><span class="c">禮</span><span class="zp">ㄌㄧˇ</span></span><span class="t"><span class="c">貌</span><span class="zp">ㄇㄠˋ</span></span><span class="t"><span class="c">的</span><span class="zp">ㄉㄜ˙</span></span><span class="t"><span class="c">開</span><span class="zp">ㄎㄞ</span></span><span class="t"><span class="c">場</span><span class="zp">ㄔㄤˇ</span></span><span class="t"><span class="c">白</span><span class="zp">ㄅㄞˊ</span></span></div>
   <div class="pgrid"><img src="images/P0_bow.png" alt="">
     <div><div><span class="pspeaker"><span class="t"><span class="c">我</span><span class="zp">ㄨㄛˇ</span></span><span class="t"><span class="c">說</span><span class="zp">ㄕㄨㄛ</span></span></span><p class="pscript"><span class="t"><span class="c">各</span><span class="zp">ㄍㄜˋ</span></span><span class="t"><span class="c">位</span><span class="zp">ㄨㄟˋ</span></span><span class="t"><span class="c">評</span><span class="zp">ㄆㄧㄥˊ</span></span><span class="t"><span class="c">審</span><span class="zp">ㄕㄣˇ</span></span><span class="t"><span class="c">老</span><span class="zp">ㄌㄠˇ</span></span><span class="t"><span class="c">師</span><span class="zp">ㄕ</span></span>、<span class="t"><span class="c">小</span><span class="zp">ㄒㄧㄠˇ</span></span><span class="t"><span class="c">朋</span><span class="zp">ㄆㄥˊ</span></span><span class="t"><span class="c">友</span><span class="zp">ㄧㄡˇ</span></span><span class="t"><span class="c">們</span><span class="zp">ㄇㄣ˙</span></span>，<span class="t"><span class="c">大</span><span class="zp">ㄉㄚˋ</span></span><span class="t"><span class="c">家</span><span class="zp">ㄐㄧㄚ</span></span><span class="t"><span class="c">好</span><span class="zp">ㄏㄠˇ</span></span>！<span class="t"><span class="c">今</span><span class="zp">ㄐㄧㄣ</span></span><span class="t"><span class="c">天</span><span class="zp">ㄊㄧㄢ</span></span><span class="t"><span class="c">我</span><span class="zp">ㄨㄛˇ</span></span><span class="t"><span class="c">要</span><span class="zp">ㄧㄠˋ</span></span><span class="t"><span class="c">講</span><span class="zp">ㄐㄧㄤˇ</span></span><span class="t"><span class="c">的</span><span class="zp">ㄉㄜ˙</span></span><span class="t"><span class="c">故</span><span class="zp">ㄍㄨˋ</span></span><span class="t"><span class="c">事</span><span class="zp">ㄕˋ</span></span><span class="t"><span class="c">是</span><span class="zp">ㄕˋ</span></span>——《<span class="t"><span class="c">我</span><span class="zp">ㄨㄛˇ</span></span><span class="t"><span class="c">只</span><span class="zp">ㄓˇ</span></span><span class="t"><span class="c">想</span><span class="zp">ㄒㄧㄤˇ</span></span><span class="t"><span class="c">吃</span><span class="zp">ㄔ</span></span><span class="t"><span class="c">好</span><span class="zp">ㄏㄠˇ</span></span><span class="t"><span class="c">吃</span><span class="zp">ㄔ</span></span><span class="t"><span class="c">的</span><span class="zp">ㄉㄜ˙</span></span>！》</p></div>
